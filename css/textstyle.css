@@ -1,0 +1,214 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:900");
+.wrapper {
+  animation: sliding-background 40s linear infinite;
+  background: url("https://images.unsplash.com/photo-1452697620382-f6543ead73b5") no-repeat left/120%;
+  height: 100vh;
+  text-align: center;
+  width: 100vw;
+}
+
+.title {
+  background: white;
+  color: black;
+  font-family: "Montserrat", sans-serif;
+  font-size: 35vw;
+  letter-spacing: 1vw;
+  line-height: 50vh;
+  margin: 0;
+  mix-blend-mode: lighten;
+  text-transform: uppercase;
+  text-shadow: 0 0 0px, 1px 1px black, 2px 2px black, 3px 3px black, 4px 4px black, 5px 5px black, 6px 6px black, 7px 7px black, 8px 8px black, 9px 9px black, 10px 10px black, 11px 11px black, 12px 12px black, 13px 13px black, 14px 14px black, 15px 15px black, 16px 16px black, 17px 17px black, 18px 18px black, 19px 19px black, 20px 20px black, 21px 21px black, 22px 22px black, 23px 23px black, 24px 24px black, 25px 25px black, 26px 26px black, 27px 27px black, 28px 28px black, 29px 29px black, 30px 30px black, 31px 31px black, 32px 32px black, 33px 33px black, 34px 34px black, 35px 35px black;
+}
+.title:before {
+  color: white;
+  content: attr(data-text);
+  margin-left: -1%;
+  margin-top: -1%;
+  position: absolute;
+}
+
+@keyframes sliding-background {
+  0%, 100% {
+    background-position: 0 40%;
+  }
+  50% {
+    background-position: 100% 40%;
+  }
+}
+
+
+/* We Move text */
+
+@import url("https://fonts.googleapis.com/css?family=Saira+Semi+Condensed");
+body {
+ /* background: #39393B; */
+  font-family: "Saira Semi Condensed", sans-serif;
+}
+
+.main-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ffcc99;
+}
+
+.first-container, .second-container {
+  cursor: pointer;
+  position: relative;
+}
+.first-container h1, .second-container h1 {
+  position: relative;
+  letter-spacing: 2px;
+  font-size: 5vw;
+}
+
+.first-container {
+  margin-bottom: 15px;
+}
+
+span {
+  display: inline-block;
+  position: relative;
+  margin-right: 5px;
+}
+span:after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 0;
+  top: 0;
+  left: 0;
+  transition: 0.6s;
+  z-index: -5;
+}
+
+.share:hover > h1 > span:nth-child(1):after {
+  background: #ffb399;
+  width: 100%;
+  transition: 0.6s;
+  transition-delay: 100ms;
+  transform: rotate(-25deg);
+}
+
+.share:hover > h1 > span:nth-child(1) {
+  color: #39393B;
+  transition-delay: 110ms;
+}
+
+.share:hover > h1 > span:nth-child(2):after {
+  background: #ffb399;
+  width: 100%;
+  transition: 0.6s;
+  transition-delay: 200ms;
+  transform: rotate(-20deg);
+}
+
+.share:hover > h1 > span:nth-child(2) {
+  color: #39393B;
+  transition-delay: 220ms;
+}
+
+.share:hover > h1 > span:nth-child(3):after {
+  background: #ffb399;
+  width: 100%;
+  transition: 0.6s;
+  transition-delay: 300ms;
+  transform: rotate(-15deg);
+}
+
+.share:hover > h1 > span:nth-child(3) {
+  color: #39393B;
+  transition-delay: 330ms;
+}
+
+.share:hover > h1 > span:nth-child(4):after {
+  background: #ffb399;
+  width: 100%;
+  transition: 0.6s;
+  transition-delay: 400ms;
+  transform: rotate(-10deg);
+}
+
+.share:hover > h1 > span:nth-child(4) {
+  color: #39393B;
+  transition-delay: 440ms;
+}
+
+.share:hover > h1 > span:nth-child(5):after {
+  background: #ffb399;
+  width: 100%;
+  transition: 0.6s;
+  transition-delay: 500ms;
+  transform: rotate(-5deg);
+}
+
+.share:hover > h1 > span:nth-child(5) {
+  color: #39393B;
+  transition-delay: 550ms;
+}
+
+.share:hover > h1 > span:nth-child(6):after {
+  background: #ffb399;
+  width: 100%;
+  transition: 0.6s;
+  transition-delay: 600ms;
+  transform: rotate(0deg);
+}
+
+.share:hover > h1 > span:nth-child(6) {
+  color: #39393B;
+  transition-delay: 660ms;
+}
+
+.share:hover > h1 > span:nth-child(7):after {
+  background: #ffb399 ;
+  width: 100%;
+  transition: 0.6s;
+  transition-delay: 700ms;
+  transform: rotate(5deg);
+}
+
+.share:hover > h1 > span:nth-child(7) {
+  color: #39393B;
+  transition-delay: 770ms;
+}
+
+.share:hover > h1 > span:nth-child(8):after {
+  background: #ffb399;
+  width: 100%;
+  transition: 0.6s;
+  transition-delay: 800ms;
+  transform: rotate(10deg);
+}
+
+.share:hover > h1 > span:nth-child(8) {
+  color: #39393B;
+  transition-delay: 880ms;
+}
+
+.share:hover > h1 > span:nth-child(9):after {
+  background: #ffb399 ;
+  width: 100%;
+  transition: 0.6s;
+  transition-delay: 900ms;
+  transform: rotate(15deg);
+}
+
+.share:hover > h1 > span:nth-child(9) {
+  color: #39393B;
+  transition-delay: 990ms;
+}
+
+.share:hover > h2 > span:nth-child(10):after {
+  background: #ffb399 ;
+  width: 100%;
+  transition: 0.6s;
+  transition-delay: 1000ms;
+  transform: rotate(20deg);
+}
+
+.share:hover > h2 > span:nth-child(10) {
+  color: #39393B;
+  transition-delay: 1100ms;
+}
